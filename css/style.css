@@ -16,6 +16,14 @@ header {
     /*Oculto*/
 }
 
+.inicio-opacity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f9f5f452;
+    z-index: 2;
+}
+
 .btn-line-menu {
     width: 100%;
     height: 10%;
@@ -163,8 +171,8 @@ header {
     width: 100%;
     height: 80%;
     position: absolute;
-    background-color: #f9f5f452;
     bottom: 0;
+    z-index: 3;
 }
 
 .wc-container-text {
@@ -472,5 +480,108 @@ header {
 .amigos-right {
     width: 60%;
     height: 100%;
-    background-color: #6779df;
+    display: flex;
+    align-items: center;
+}
+
+.slider-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 300px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-slider {
+    width: 90%;
+    height: 410px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.card-slider:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 85%!important;
+}
+
+.btn-prev,
+.btn-next {
+    width: 40px!important;
+    height: 40px!important;
+    background: #fde5cf;
+    border: 3px solid #fde5cf;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-next {
+    right: 725px!important;
+}
+
+.btn-prev:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.btn-prev:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}
+
+.btn-next:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.btn-next:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1em!important;
+}
+
+.amigo1 {
+    background-image: url(../img/friends/Antuan.jpg);
+}
+
+.amigo2 {
+    background-image: url(../img/friends/Miriam.jpg);
+}
+
+.amigo3 {
+    background-image: url(../img/friends/Guillermo.jpg);
+}
+
+.amigo4 {
+    background-image: url(../img/friends/Rooth.jpg);
 }
