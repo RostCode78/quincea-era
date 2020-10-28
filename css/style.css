@@ -13,6 +13,7 @@ header {
     background-image: url(../img/header.jpg);
     background-size: cover;
     position: relative;
+    /*Oculto*/
 }
 
 .btn-line-menu {
@@ -28,10 +29,21 @@ header {
 .btn-hamburger {
     width: 50px;
     height: 50px;
-    background-color: #303030;
+    background: #fde5cf;
+    border: 3px solid #fde5cf;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     cursor: pointer;
     position: absolute;
     right: 50px;
+}
+
+.btn-hamburger:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.btn-hamburger:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
 }
 
 .line-menu {
@@ -312,19 +324,19 @@ header {
 .sm-box-right h2 {
     width: 90%;
     height: 25%;
-    font-size: 4em;
-    font-family: 'Nunito', sans-serif;
-    line-height: 60px;
+    font-size: 5em;
+    font-family: 'Poiret One', cursive;
+    line-height: 75px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .sm-box-right p {
     width: 90%;
     height: 23%;
     font-size: 1.3em;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     margin: 5px 0px;
@@ -344,6 +356,7 @@ header {
     bottom: 20px;
     left: 35px;
     cursor: pointer;
+    transition: .1s ease;
 }
 
 .box-right-btn:hover {
@@ -358,8 +371,106 @@ header {
     font-family: 'Nunito', sans-serif;
     font-size: 1.5em;
     color: #303030;
-    text-decoration: underline;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .1s;
+}
+
+.box-right-btn:hover p {
+    text-decoration: underline;
+}
+
+
+/*====================================
+=               AMIGOS               =
+====================================*/
+
+#amigos {
+    width: 100%;
+    height: 100vh;
+    background-color: #fde5cf;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.amigos-left {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.amigos-left h3 {
+    width: 90%;
+    height: 7%;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.amigos-left h2 {
+    width: 90%;
+    height: 40%;
+    font-size: 3.5em;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amigos-left p {
+    width: 90%;
+    height: 20%;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.amigos-left-btn {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.amigos-left-btn a {
+    width: 150px;
+    height: 50px;
+    background: #fde5cf;
+    border: 3px solid #fde5cf;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: .1s ease;
+}
+
+.amigos-left-btn a:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+    text-decoration: underline;
+}
+
+.amigos-left-btn a:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}
+
+.amigos-right {
+    width: 60%;
+    height: 100%;
+    background-color: #6779df;
 }

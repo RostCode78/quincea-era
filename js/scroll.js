@@ -26,7 +26,7 @@ let ms = {
 
       ps.posicionScroll = window.pageYOffset;
 
-      if( ps.posicionScroll > ps.cajaScroll.offsetTop + 792) {
+      if( ps.posicionScroll > ps.cajaScroll.offsetTop + 700) {
 
          ps.navbar.style.left = "100%";
 
