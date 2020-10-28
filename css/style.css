@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #fde5cf;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -37,8 +41,8 @@ header {
 .btn-hamburger {
     width: 50px;
     height: 50px;
-    background: #fde5cf;
-    border: 3px solid #fde5cf;
+    background: var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 10px;
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     cursor: pointer;
@@ -58,7 +62,7 @@ header {
     width: 100%;
     height: 20%;
     position: fixed;
-    background-color: #fde5cf;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     z-index: 1000;
@@ -152,8 +156,8 @@ header {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
     color: #303030;
-    background: #fde5cf;
-    border: 3px solid #fde5cf;
+    background: var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 10px;
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     transition: .1s ease;
@@ -297,7 +301,7 @@ header {
 #sobre-mi {
     width: 100%;
     height: 100vh;
-    background-color: #fde5cf;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,8 +360,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fde5cf;
-    border: 3px solid #fde5cf;
+    background: var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 50px;
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     position: absolute;
@@ -397,7 +401,7 @@ header {
 #amigos {
     width: 100%;
     height: 100vh;
-    background-color: #fde5cf;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -455,8 +459,8 @@ header {
 .amigos-left-btn a {
     width: 150px;
     height: 50px;
-    background: #fde5cf;
-    border: 3px solid #fde5cf;
+    background: var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 50px;
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     display: flex;
@@ -536,8 +540,8 @@ header {
 .btn-next {
     width: 40px!important;
     height: 40px!important;
-    background: #fde5cf;
-    border: 3px solid #fde5cf;
+    background: var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 50px;
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     display: flex;
@@ -568,6 +572,8 @@ header {
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: 1em!important;
+    font-weight: 800;
+    color: #303030!important;
 }
 
 .amigo1 {
@@ -584,4 +590,15 @@ header {
 
 .amigo4 {
     background-image: url(../img/friends/Rooth.jpg);
+}
+
+
+/*====================================
+=               GALERIA              =
+====================================*/
+
+#galeria {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
 }
