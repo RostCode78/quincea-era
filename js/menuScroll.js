@@ -28,6 +28,29 @@ let metodosScroll = {
 
       producto.preventDefault();
 
+      if ( pmH.activado ) {
+
+         pmH.body.style.overflow = "initial";
+         pmH.overMenu.style.zIndex = "900";
+         pmH.overMenu.style.opacity = "1";
+         setTimeout(() => {
+            pmH.overMenu.style.transition = ".4s ease";
+            pmH.overMenu.style.opacity = "1";
+            pmH.btnMenu.style.transition = ".4s ease";
+            pmH.btnMenu.style.boxShadow = "4px 4px 8px #00000021, -4px -4px 8px #ffffff21";
+         }, 300);
+
+
+         pmH.container.style.backgroundColor = "#30303000";
+         setTimeout(() => {
+            pmH.container.style.transition = ".4s ease";
+            pmH.container.style.marginRight = "-100%";
+         }, 400);
+
+         pmH.activado = false;
+         
+      }
+
       propScroll.ruta = producto.target.getAttribute("href");
 
       propScroll.destinoScroll = document.querySelector(propScroll.ruta).offsetTop-propScroll.padding;

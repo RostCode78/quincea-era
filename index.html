@@ -7,6 +7,9 @@
     <title>XV Website</title>
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script>
+
     <!-- GOOGLE FONTS -->
 
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
@@ -27,7 +30,42 @@
 <body>
 
     <div class="menu-lateral-container">
-        <div class="menu-lateral"></div>
+        <div class="menu-lateral">
+
+            <h2>TG CAMILA</h2>
+
+            <div class="ml-box">
+                <nav class="ml-box-nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" class="move">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#sobre-mi" class="move">Sobre Mi</a>
+                        </li>
+                        <li>
+                            <a href="#galeria" class="move">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="#datos" class="move">Datos</a>
+                        </li>
+                        <li>
+                            <a href="#etc" class="move">Etc</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-menu-lateral">
+                <ul>
+                    <li class="redes-menu"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="redes-menu"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="redes-menu"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+                <p>21 / 04 / 2021</p>
+            </div>
+
+        </div>
     </div>
 
     <header id="inicio">
@@ -35,7 +73,9 @@
         <div class="inicio-opacity"></div>
 
         <div class="btn-line-menu">
-            <div class="btn-hamburger"></div>
+            <div class="btn-hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
 
         <div class="line-menu">
@@ -65,25 +105,14 @@
                     <nav class="navbar">
                         <ul>
                             <li class="list-content">
-                                <a href="#inicio">Inicio</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li class="list-content">
                                 <a href="#sobre-mi" class="move">Sobre Mi</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="list-content">
                                 <a href="#galeria" class="move">Galeria</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="list-content">
-                                <a href="#etc" class="move">Etc</a>
+                                <a href="#datos" class="move">Datos</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li class="list-content">
                                 <a href="#" class="move">Etc</a>
                             </li>
@@ -230,9 +259,10 @@
         </div>
     </section>
 
-    <section id="etc"></section>
+    <section id="datos"></section>
 
     <script src="./js/scroll.js"></script>
+    <script src="./js/menuHamburger.js"></script>
     <script src="./js/menuScroll.js"></script>
 
     <!-- SWIPERJS -->
