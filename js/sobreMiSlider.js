@@ -2,7 +2,8 @@ let psml = {
 
    card: $$('.card-opacity'),
    slider: $('.container-slider'),
-   left: 0
+   left: 0,
+   item: 0
 
 };
 
@@ -23,49 +24,9 @@ let msml = {
 
    activarSlider: (e) => {
 
-      if( e.target == psml.card[0] ) {
-         if ( psml.left == 0 ){
-
-          þ("...");
-          þ(e.target);
-          psml.slider.style.left = `-${psml.left}%`;
-
-         } else if ( psml.left >= 100 ) {
-
-            psml.left = 0;
-            þ(e.target);
-            psml.slider.style.left = `-${psml.left}%`;
-
-         }
-      } else if( e.target == psml.card[1] ) {
-         if ( psml.left == 0 ){
-
-            psml.left = 100;
-            þ(e.target);
-            psml.slider.style.left = `-${psml.left}%`;
-
-         } else if ( psml.left > 100 || psml.left < 100 ) {
-
-            psml.left = 100;
-            þ(e.target);
-            psml.slider.style.left = `-${psml.left}%`;
-
-         }
-      } else if ( e.target == psml.card[2] ) {
-         if ( psml.left == 0 ){
-
-            psml.left = 200;
-            þ(e.target);
-            psml.slider.style.left = `-${psml.left}%`;
-
-         } else if ( psml.left == 100) {
-
-            psml.left = 200;
-            þ(e.target);
-            psml.slider.style.left = `-${psml.left}%`;
-
-         }
-      }
+      psml.item = e.target.getAttribute("item") - 1;
+      
+      psml.slider.style.left = ` ${ psml.item * -100 }% `;
 
    }
 
