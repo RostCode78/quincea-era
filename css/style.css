@@ -11,6 +11,48 @@
     color: #303030;
 }
 
+
+/*====================================
+=               MODAL                =
+====================================*/
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fde5cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.background-second-color {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffddfc;
+    z-index: 1;
+}
+
+.modal-box {
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*====================================
+=            MENU LATERAL            =
+====================================*/
+
 .menu-lateral-container {
     width: 100%;
     height: 100vh;
@@ -186,7 +228,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-    z-index: 900;
+    z-index: 9000;
 }
 
 .btn-hamburger {
@@ -955,4 +997,8 @@ header {
     width: 100%;
     height: 100vh;
     background-color: var(--primary-color);
+}
+
+background-color: var(--primary-color);
+
 }

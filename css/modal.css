@@ -1,0 +1,103 @@
+/*====================================
+=             SOBRE MI               =
+====================================*/
+
+.modal-sobre-mi-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msm-image-box {
+    width: 93%;
+    height: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.msml-image1 {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+}
+
+.msml-image2 {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    position: absolute;
+    right: -105%;
+}
+
+.msml-image3 {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    right: -210%;
+}
+
+.modal-sobre-mi-right {
+    width: 60%;
+    height: 100%;
+}
+
+.msmr-top {
+    width: 100%;
+    height: 40%;
+    background-color: rosybrown;
+    position: relative;
+}
+
+.cards-img-container {
+    width: 100%;
+    height: 200px;
+    background-color: #303030;
+    position: absolute;
+    bottom: 10px;
+    left: -60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cards-img-container div {
+    cursor: pointer;
+}
+
+.card-image1 {
+    width: 230px;
+    height: 80%;
+    background-color: rgb(69, 187, 69);
+    position: absolute;
+    left: 0;
+}
+
+.card-image2 {
+    width: 230px;
+    height: 80%;
+    background-color: yellow;
+    position: absolute;
+    left: 240px;
+}
+
+.card-image3 {
+    width: 230px;
+    height: 80%;
+    background-color: red;
+    position: absolute;
+    left: 480px;
+}
+
+.msmr-bottom {
+    width: 100%;
+    height: 60%;
+    background-color: blueviolet;
+}
