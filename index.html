@@ -32,6 +32,15 @@
 
     <div class="modal-container">
         <div class="background-second-color"></div>
+
+        <!-- 
+            El div comentado es el modal que se agrega usando
+            innerHTML desde el script ./js/showModal.js,
+            dentro de este modal se debe poder
+            usar el slider sin problemas pero el script
+            ./js/sobreMiSlider.js no toma el querySelector.
+        -->
+
         <!--
         <div class="modal-box">
 
@@ -71,131 +80,6 @@
     -->
     </div>
 
-    <div class="menu-lateral-container">
-        <div class="menu-lateral">
-
-            <h2>TG CAMILA</h2>
-
-            <div class="ml-box">
-                <nav class="ml-box-nav">
-                    <ul>
-                        <li>
-                            <a href="#inicio" class="move">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#sobre-mi" class="move">Sobre Mi</a>
-                        </li>
-                        <li>
-                            <a href="#galeria" class="move">Galeria</a>
-                        </li>
-                        <li>
-                            <a href="#datos" class="move">Datos</a>
-                        </li>
-                        <li>
-                            <a href="#etc" class="move">Etc</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="footer-menu-lateral">
-                <ul>
-                    <li class="redes-menu"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="redes-menu"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="redes-menu"><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                </ul>
-                <p>21 / 04 / 2021</p>
-            </div>
-
-        </div>
-    </div>
-
-    <header id="inicio">
-
-        <div class="inicio-opacity"></div>
-
-        <div class="btn-line-menu">
-            <div class="btn-hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-
-        <div class="line-menu">
-            <div class="color-line"></div>
-            <div class="text-line">
-                <div class="tl-nombre">
-                    <div class="tl-nombre-puntos">
-                        <div class="circulo" style="background-color: #D9BFD7;"></div>
-                        <div class="circulo" style="background-color: #F2C2DC;"></div>
-                        <div class="circulo" style="background-color: #A7E4F2;"></div>
-                        <div class="circulo" style="background-color: #F2C2DC;"></div>
-                        <div class="circulo" style="background-color: #D9BFD7;"></div>
-                    </div>
-                    <div class="tl-nombre-text">
-                        <h1>TG CAMILA</h1>
-                    </div>
-                    <div class="tl-nombre-puntos">
-                        <div class="circulo" style="background-color: #D9BFD7;"></div>
-                        <div class="circulo" style="background-color: #F2C2DC;"></div>
-                        <div class="circulo" style="background-color: #A7E4F2;"></div>
-                        <div class="circulo" style="background-color: #F2C2DC;"></div>
-                        <div class="circulo" style="background-color: #D9BFD7;"></div>
-                    </div>
-                </div>
-                <div class="tl-menu">
-
-                    <nav class="navbar">
-                        <ul>
-                            <li class="list-content">
-                                <a href="#sobre-mi" class="move">Sobre Mi</a>
-                            </li>
-                            <li class="list-content">
-                                <a href="#galeria" class="move">Galeria</a>
-                            </li>
-                            <li class="list-content">
-                                <a href="#datos" class="move">Datos</a>
-                            </li>
-                            <li class="list-content">
-                                <a href="#" class="move">Etc</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="welcome-container">
-            <div class="wc-container-text">
-                <div class="ct-card">
-                    <p>Bienvenido al WebSite de mis XV.</p>
-                    <div class="line"></div>
-                    <div class="counter-time-box">
-                        <div class="card-time ct-days">
-                            <h3>155</h3>
-                            <p>Dias</p>
-                        </div>
-                        <div class="card-time ct-hours">
-                            <h3>15</h3>
-                            <p>Horas</p>
-                        </div>
-                        <div class="card-time ct-minutes">
-                            <h3>51</h3>
-                            <p>Minutos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="wc-container-date">
-                <div class="cd-card">
-                    <h3>Te espero el día:</h3>
-                    <p>21 / 04 / 2021</p>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
     <section id="sobre-mi">
         <div class="sm-box">
             <div class="sm-box-left"></div>
@@ -210,102 +94,6 @@
         </div>
     </section>
 
-    <section id="amigos">
-        <div class="amigos-left">
-            <h3>Mis amigos</h3>
-            <h2>Conoce un poco de mis mejores amigos.</h2>
-            <p>Ellos estan siempre conmigo y por eso deberías conocerlos. <br> ¡En las buenas y en las mejores!</p>
-            <div class="amigos-left-btn">
-                <a href="#" class="btn-video">Ver Video</a>
-            </div>
-        </div>
-        <div class="amigos-right">
-
-            <div class="slider-box">
-
-                <!-- Slider main container -->
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="box-slider">
-                                <div class="card-slider amigo1"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-slider">
-                                <div class="card-slider amigo2"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-slider">
-                                <div class="card-slider amigo3"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-slider">
-                                <div class="card-slider amigo4"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev btn-prev"></div>
-                    <div class="swiper-button-next  btn-next"></div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-    </section>
-
-    <section id="galeria">
-        <div class="galeria-box">
-            <div class="box1">
-                <div class="box1-image"></div>
-                <div class="galeria-box-opacity"></div>
-            </div>
-            <div class="box2">
-                <div class="box2-image"></div>
-                <div class="galeria-box-opacity"></div>
-            </div>
-            <div class="box3">
-                <div class="box3-image"></div>
-                <div class="galeria-box-opacity">
-                    <p>Amigos</p>
-                </div>
-            </div>
-            <div class="box4">
-                <div class="box4-image"></div>
-                <div class="galeria-box-opacity"></div>
-            </div>
-            <div class="box5">
-                <div class="box5-image"></div>
-                <div class="galeria-box-opacity"></div>
-            </div>
-            <div class="box6">
-                <div class="box6-image"></div>
-                <div class="galeria-box-opacity">
-                    <p>Familia</p>
-                </div>
-            </div>
-            <div class="box7">
-                <div class="box7-image"></div>
-                <div class="galeria-box-opacity"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="datos"></section>
-
-    <script src="./js/scroll.js"></script>
-    <script src="./js/menuHamburger.js"></script>
-    <script src="./js/menuScroll.js"></script>
     <script src="./js/showModal.js"></script>
     <script src="./js/sobreMiSlider.js"></script>
 

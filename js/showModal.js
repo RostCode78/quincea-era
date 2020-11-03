@@ -1,3 +1,7 @@
+// $ -> querySelector.bind(document);
+// $$ -> querySelectorAll.bind(document);
+// þ -> console.log
+
 let psm = {
 
    btnSobreMi: $('.box-right-btn'),
