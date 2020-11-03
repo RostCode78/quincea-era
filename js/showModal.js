@@ -1,6 +1,6 @@
-// $ -> querySelector.bind(document);
-// $$ -> querySelectorAll.bind(document);
-// þ -> console.log
+const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document);
+const þ = console.log;
 
 let psm = {
 
@@ -63,7 +63,7 @@ let msm = {
    abrirModal: () => {
 
       psm.modalContainer.style.display = "flex";
-      psm.btnMenu.style.zIndex = "9000";
+      //psm.btnMenu.style.zIndex = "9000";
       psm.modalContainer.innerHTML += `${psm.sobreMiHTML}`;
       psm.body.style.overflow = "hidden";
 
