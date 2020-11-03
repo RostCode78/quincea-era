@@ -1,4 +1,41 @@
 /*====================================
+=               MODAL                =
+====================================*/
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fde5cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.background-second-color {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffddfc;
+    z-index: 1;
+}
+
+.modal-box {
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*====================================
 =             SOBRE MI               =
 ====================================*/
 
@@ -13,35 +50,47 @@
 .msm-image-box {
     width: 93%;
     height: 94%;
+    overflow: hidden;
+}
+
+.container-slider {
+    width: 100%;
+    height: 100%;
+    transition: .6s;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
 }
 
 .msml-image1 {
     width: 100%;
     height: 100%;
-    background-color: green;
+    background: #30303052 url('../img/sobre-mi/1.jpg');
+    background-position: center;
+    background-size: cover;
     position: absolute;
 }
 
 .msml-image2 {
     width: 100%;
     height: 100%;
-    background-color: yellow;
+    background: #30303052 url('../img/sobre-mi/2.jpg');
+    background-position: center;
+    background-size: cover;
     position: absolute;
-    right: -105%;
+    right: -100%;
 }
 
 .msml-image3 {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background: #30303052 url('../img/sobre-mi/3.jpg');
+    background-position: center;
+    background-size: cover;
     position: absolute;
-    right: -210%;
+    right: -200%;
 }
 
 .modal-sobre-mi-right {
@@ -59,7 +108,6 @@
 .cards-img-container {
     width: 100%;
     height: 200px;
-    background-color: #303030;
     position: absolute;
     bottom: 10px;
     left: -60px;
@@ -75,7 +123,9 @@
 .card-image1 {
     width: 230px;
     height: 80%;
-    background-color: rgb(69, 187, 69);
+    background-image: url('../img/sobre-mi/1.jpg');
+    background-position: top;
+    background-size: cover;
     position: absolute;
     left: 0;
 }
@@ -83,7 +133,9 @@
 .card-image2 {
     width: 230px;
     height: 80%;
-    background-color: yellow;
+    background-image: url('../img/sobre-mi/2.jpg');
+    background-position: top;
+    background-size: cover;
     position: absolute;
     left: 240px;
 }
@@ -91,9 +143,21 @@
 .card-image3 {
     width: 230px;
     height: 80%;
-    background-color: red;
+    background-image: url('../img/sobre-mi/3.jpg');
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 480px;
+}
+
+.card-opacity {
+    width: 100%;
+    height: 100%;
+    background-color: #30303035;
+}
+
+.co-select1 {
+    background-color: #303030db;
 }
 
 .msmr-bottom {
