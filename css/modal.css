@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
     background-color: #fde5cf;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
