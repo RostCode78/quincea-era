@@ -48,6 +48,15 @@ let metodosScroll = {
          }, 400);
 
          pmH.activado = false;
+
+         if ( psm.modalAbierto ) {
+
+            psm.modalContainer.style.display = "none";
+            psm.btnMenu.style.zIndex = "900";
+            psm.body.style.overflow = "initial";
+            psm.modalAbierto = false;
+
+         }
          
       }
 

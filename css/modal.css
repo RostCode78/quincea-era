@@ -25,6 +25,32 @@
     z-index: 1;
 }
 
+.btn-cerrar {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ffddfc;
+    border: 3px solid #ffddfc;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.5em;
+}
+
+.btn-cerrar:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.btn-cerrar:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}
+
 .modal-box {
     width: 85%;
     height: 80%;
@@ -67,7 +93,7 @@
 .msml-image1 {
     width: 100%;
     height: 100%;
-    background: #30303052 url('../img/sobre-mi/1.jpg');
+    background: url('../img/sobre-mi/1.jpg');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -76,7 +102,7 @@
 .msml-image2 {
     width: 100%;
     height: 100%;
-    background: #30303052 url('../img/sobre-mi/2.jpg');
+    background: url('../img/sobre-mi/2.jpg');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -86,7 +112,7 @@
 .msml-image3 {
     width: 100%;
     height: 100%;
-    background: #30303052 url('../img/sobre-mi/3.jpg');
+    background: url('../img/sobre-mi/3.jpg');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -101,7 +127,9 @@
 .msmr-top {
     width: 100%;
     height: 40%;
-    background-color: rosybrown;
+    background: url('../img/modalSobreMi.svg');
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 
@@ -153,15 +181,36 @@
 .card-opacity {
     width: 100%;
     height: 100%;
-    background-color: #30303035;
-}
-
-.co-select1 {
-    background-color: #303030db;
+    transition: .3s ease;
 }
 
 .msmr-bottom {
     width: 100%;
     height: 60%;
-    background-color: blueviolet;
+}
+
+.msmr-bottom h2 {
+    width: 100%;
+    height: auto;
+    font-size: 3em;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 300;
+}
+
+.msmr-bottom h3 {
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 300;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.msmr-bottom p {
+    width: 85%;
+    height: auto;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
 }

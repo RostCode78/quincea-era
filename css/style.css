@@ -185,12 +185,14 @@ header {
 }
 
 .btn-line-menu {
-    width: 100%;
+    width: 200px;
     height: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 900;
 }
 
@@ -960,8 +962,4 @@ header {
     width: 100%;
     height: 100vh;
     background-color: var(--primary-color);
-}
-
-background-color: var(--primary-color);
-
 }

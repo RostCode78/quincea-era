@@ -22,6 +22,27 @@ let msml = {
    },
 
    activarSlider: (e) => {
+   
+      if( e.target == psml.card[0] ) {
+
+         psml.card[0].style.backgroundColor = "#303030d5";
+         psml.card[1].style.backgroundColor = "#30303000";
+         psml.card[2].style.backgroundColor = "#30303000";
+
+      } else if( e.target == psml.card[1] ) {
+
+         psml.card[0].style.backgroundColor = "#30303000";
+         psml.card[1].style.backgroundColor = "#303030d5";
+         psml.card[2].style.backgroundColor = "#30303000";
+
+
+      } else {
+
+         psml.card[0].style.backgroundColor = "#30303000";
+         psml.card[1].style.backgroundColor = "#30303000";
+         psml.card[2].style.backgroundColor = "#303030d5";
+
+      }
 
       psml.item = e.target.getAttribute("item") - 1;
       

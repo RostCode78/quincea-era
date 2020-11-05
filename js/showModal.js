@@ -3,45 +3,10 @@ let psm = {
    btnSobreMi: $('.box-right-btn'),
    modalContainer: $('.modal-container'),
    btnMenu: $('.btn-line-menu'),
-   sobreMiHTML: `
-   <div class="modal-box">
-
-      <div class="modal-sobre-mi-left">
-         <div class="msm-image-box">
-            <div class="container-slider">
-                  <div class="msml-image1"></div>
-                  <div class="msml-image2"></div>
-                  <div class="msml-image3"></div>
-            </div>
-         </div>
-      </div>
-      
-      <div class="modal-sobre-mi-right">
-         <div class="msmr-top">
-            <div class="cards-img-container">
-                  <div class="card-image1 slider-sobre-mi">
-
-                     <div item="1" class="card-opacity co-select1"></div>
-
-                  </div>
-                  <div class="card-image2 slider-sobre-mi">
-
-                     <div item="2" class="card-opacity co-select2"></div>
-
-                  </div>
-                  <div class="card-image3 slider-sobre-mi">
-
-                     <div item="3" class="card-opacity co-select3"></div>
-
-                  </div>
-            </div>
-         </div>
-         <div class="msmr-bottom"></div>
-      </div>
-
-   </div>
-   `,
-   body: $('body')
+   btnCerrar: $('.btn-cerrar'),
+   card: $$('.card-opacity'),
+   body: $('body'),
+   modalAbierto: false
 
 }
 
@@ -54,21 +19,37 @@ let msm = {
          msm.abrirModal
       )
 
+      psm.btnCerrar.addEventListener(
+         'click',
+         msm.cerrarModal
+      )
+
    },
 
    abrirModal: () => {
 
+      psm.card[0].style.backgroundColor = "#303030d5";
       psm.modalContainer.style.display = "flex";
       psm.btnMenu.style.zIndex = "9000";
-      psm.modalContainer.innerHTML += `${psm.sobreMiHTML}`;
       psm.body.style.overflow = "hidden";
+      psm.modalAbierto = true;
 
-      const sliderScript = document.createElement('script');
-      sliderScript.src = './js/sobreMiSlider.js';
-      psm.modalContainer.appendChild(sliderScript).setAttribute("id", "script-modal");
+      //const sliderScript = document.createElement('script');
+      //sliderScript.src = './js/sobreMiSlider.js';
+      //psm.body.appendChild(sliderScript);
+
+   },
+
+   cerrarModal: () => {
+
+      psm.modalContainer.style.display = "none";
+      psm.btnMenu.style.zIndex = "900";
+      psm.body.style.overflow = "initial";
+      psm.modalAbierto = false;
 
    }
 
 }
 
 msm.start();
+
