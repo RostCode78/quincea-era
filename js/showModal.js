@@ -63,6 +63,10 @@ let msm = {
       psm.modalContainer.innerHTML += `${psm.sobreMiHTML}`;
       psm.body.style.overflow = "hidden";
 
+      const sliderScript = document.createElement('script');
+      sliderScript.src = './js/sobreMiSlider.js';
+      psm.modalContainer.appendChild(sliderScript).setAttribute("id", "script-modal");
+
    }
 
 }

@@ -2,7 +2,6 @@ let psml = {
 
    card: $$('.card-opacity'),
    slider: $('.container-slider'),
-   left: 0,
    item: 0
 
 };
