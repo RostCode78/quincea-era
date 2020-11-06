@@ -214,3 +214,183 @@
     font-family: 'Open Sans', sans-serif;
     margin-top: 10px;
 }
+
+
+/*====================================
+=               AMIGOS               =
+====================================*/
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-color: #fde5cf;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.btn-cerrar-amigos {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ffddfc;
+    border: 3px solid #ffddfc;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.5em;
+}
+
+.btn-cerrar-amigos:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.btn-cerrar-amigos:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}
+
+.container-all {
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.friends-container {
+    width: 480px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-friend1 {
+    width: 75%;
+    height: 80%;
+    background-image: url(../img/friends/Antuan.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+}
+
+.img-friend2 {
+    width: 75%;
+    height: 80%;
+    background-image: url(../img/friends/Miriam.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+}
+
+.img-friend3 {
+    width: 75%;
+    height: 80%;
+    background-image: url(../img/friends/Guillermo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+}
+
+.img-friend4 {
+    width: 75%;
+    height: 80%;
+    background-image: url(../img/friends/Rooth.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+}
+
+.text-friend {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #fde5cf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+}
+
+.text-friend h2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-friend p {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.text-friend ul {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text-friend ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-friend ul li a {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fde5cf;
+    border: 3px solid #fde5cf;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    transition: .1s ease;
+    font-size: 1em;
+}
+
+.text-friend ul li a:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.text-friend ul li a:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}

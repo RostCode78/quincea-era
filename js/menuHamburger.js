@@ -62,6 +62,24 @@ let mmH = {
 
          pmH.activado = false;
 
+         if ( psm.modalAbierto ) {
+
+            psm.modalContainer.style.display = "none";
+            psm.btnMenu.style.zIndex = "900";
+            psm.body.style.overflow = "initial";
+            psm.modalAbierto = false;
+
+         }
+
+         if ( pModal.openAllModal ) {
+
+            pModal.box.style.display = "none";
+            pModal.btnMenu.style.zIndex = "900";
+            pModal.body.style.overflow = "initial";
+            pModal.openAllModal = false;
+
+         }
+
       }
 
    }

@@ -1,55 +1,141 @@
-let psm = {
+let pModal = {
 
-   btnSobreMi: $('.box-right-btn'),
-   modalContainer: $('.modal-container'),
+   cards: $$('.card-slider'),
+   cerrarModal: $('.btn-cerrar-amigos'),
    btnMenu: $('.btn-line-menu'),
-   btnCerrar: $('.btn-cerrar'),
-   card: $$('.card-opacity'),
+   container: $('.container-all'),
+   openAllModal: false,
    body: $('body'),
-   modalAbierto: false
+   box: $('.modal'),
+   antuan: `
+   <div class="friends-container">
 
-}
+      <div class="img-friend1"></div>
+      <div class="text-friend">
+         <h2>Antuan</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestias laboriosam aperiam ad unde provident modi veritatis earum suscipit cum.</p>
+         <ul>
+            <li class="redes-menu"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+         </ul>
+      </div>
 
-let msm = {
+   </div>
+   `,
+
+   miriam: `
+   <div class="friends-container">
+
+      <div class="img-friend2"></div>
+      <div class="text-friend">
+         <h2>Miriam</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestias laboriosam aperiam ad unde provident modi veritatis earum suscipit cum.</p>
+         <ul>
+            <li class="redes-menu"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+         </ul>
+      </div>
+
+   </div>
+   `,
+
+   guillermo: `
+   <div class="friends-container">
+
+      <div class="img-friend3"></div>
+      <div class="text-friend">
+         <h2>Guillermo</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestias laboriosam aperiam ad unde provident modi veritatis earum suscipit cum.</p>
+         <ul>
+            <li class="redes-menu"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+         </ul>
+      </div>
+
+   </div>
+   `,
+
+   rooth: `
+   <div class="friends-container">
+
+      <div class="img-friend4"></div>
+      <div class="text-friend">
+         <h2>Rooth</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestias laboriosam aperiam ad unde provident modi veritatis earum suscipit cum.</p>
+         <ul>
+            <li class="redes-menu"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="redes-menu"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+         </ul>
+      </div>
+
+   </div>
+   `
+
+};
+
+let mModal = {
 
    start: () => {
 
-      psm.btnSobreMi.addEventListener(
-         'click',
-         msm.abrirModal
-      )
+      pModal.cards.forEach( e => {
 
-      psm.btnCerrar.addEventListener(
+         e.addEventListener(
+            'click',
+            mModal.shodModal
+         );
+
+      });
+
+      pModal.cerrarModal.addEventListener(
          'click',
-         msm.cerrarModal
+         mModal.cerrarModal
       )
 
    },
 
-   abrirModal: () => {
+   shodModal: e => {
 
-      psm.card[0].style.backgroundColor = "#303030d5";
-      psm.modalContainer.style.display = "flex";
-      psm.btnMenu.style.zIndex = "9000";
-      psm.body.style.overflow = "hidden";
-      psm.modalAbierto = true;
+      let tag = e.path[1];
+      let tagText = e.target.innerText;
+      pModal.box.style.display = "flex";
+      pModal.btnMenu.style.zIndex = "9000";
+      pModal.body.style.overflow = "hidden";
+      pModal.openAllModal = true;
 
-      //const sliderScript = document.createElement('script');
-      //sliderScript.src = './js/sobreMiSlider.js';
-      //psm.body.appendChild(sliderScript);
+      if ( tagText == pModal.cards[0].outerText ) {
+
+         pModal.container.innerHTML = `${pModal.antuan}`;
+
+      } else if ( tagText == pModal.cards[1].outerText ) {
+
+         pModal.container.innerHTML = `${pModal.miriam}`;
+
+      } else if ( tagText == pModal.cards[2].outerText ) {
+         
+         pModal.container.innerHTML = `${pModal.guillermo}`;
+
+      }  else {
+
+         pModal.container.innerHTML = `${pModal.rooth}`;
+
+      }
+
 
    },
 
    cerrarModal: () => {
 
-      psm.modalContainer.style.display = "none";
-      psm.btnMenu.style.zIndex = "900";
-      psm.body.style.overflow = "initial";
-      psm.modalAbierto = false;
+      pModal.box.style.display = "none";
+      pModal.btnMenu.style.zIndex = "900";
+      pModal.body.style.overflow = "initial";
+      pModal.openAllModal = false;
 
    }
 
 }
 
-msm.start();
-
+mModal.start();

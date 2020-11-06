@@ -5,7 +5,8 @@ let propScroll = {
    ruta: null,
    intervalo: null,
    destinoScroll: 0,
-   padding: 0
+   padding: 0,
+   modalOn: false
 
 }
 
@@ -55,6 +56,15 @@ let metodosScroll = {
             psm.btnMenu.style.zIndex = "900";
             psm.body.style.overflow = "initial";
             psm.modalAbierto = false;
+
+         }
+
+         if ( pModal.openAllModal ) {
+
+            pModal.box.style.display = "none";
+            pModal.btnMenu.style.zIndex = "900";
+            pModal.body.style.overflow = "initial";
+            pModal.openAllModal = false;
 
          }
          

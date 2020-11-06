@@ -693,6 +693,7 @@ header {
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
     cursor: pointer;
     transition: .3s ease;
+    overflow: hidden;
 }
 
 .card-slider:hover {
@@ -758,6 +759,26 @@ header {
 
 .amigo4 {
     background-image: url(../img/friends/Rooth.jpg);
+}
+
+.amigo-opacity {
+    width: 100%;
+    height: 100%;
+    background-color: #30303083;
+    position: relative;
+}
+
+.amigo-opacity h3 {
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    color: #f9f5f4b0;
+    bottom: 40px;
+    left: 10px;
+}
+
+.card-slider:hover .amigo-opacity h3 {
+    color: #f9f5f4;
 }
 
 
