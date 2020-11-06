@@ -1,4 +1,4 @@
-let pModal = {
+let pAmigos = {
 
    cards: $$('.card-slider'),
    cerrarModal: $('.btn-cerrar-amigos'),
@@ -77,50 +77,50 @@ let pModal = {
 
 };
 
-let mModal = {
+let mAmigos = {
 
    start: () => {
 
-      pModal.cards.forEach( e => {
+      pAmigos.cards.forEach( e => {
 
          e.addEventListener(
             'click',
-            mModal.shodModal
+            mAmigos.showModal
          );
 
       });
 
-      pModal.cerrarModal.addEventListener(
+      pAmigos.cerrarModal.addEventListener(
          'click',
-         mModal.cerrarModal
+         mAmigos.cerrarModal
       )
 
    },
 
-   shodModal: e => {
+   showModal: e => {
 
       let tag = e.path[1];
       let tagText = e.target.innerText;
-      pModal.box.style.display = "flex";
-      pModal.btnMenu.style.zIndex = "9000";
-      pModal.body.style.overflow = "hidden";
-      pModal.openAllModal = true;
+      pAmigos.box.style.display = "flex";
+      pAmigos.btnMenu.style.zIndex = "9000";
+      pAmigos.body.style.overflow = "hidden";
+      pAmigos.openAllModal = true;
 
-      if ( tagText == pModal.cards[0].outerText ) {
+      if ( tagText == pAmigos.cards[0].outerText ) {
 
-         pModal.container.innerHTML = `${pModal.antuan}`;
+         pAmigos.container.innerHTML = `${pAmigos.antuan}`;
 
-      } else if ( tagText == pModal.cards[1].outerText ) {
+      } else if ( tagText == pAmigos.cards[1].outerText ) {
 
-         pModal.container.innerHTML = `${pModal.miriam}`;
+         pAmigos.container.innerHTML = `${pAmigos.miriam}`;
 
-      } else if ( tagText == pModal.cards[2].outerText ) {
+      } else if ( tagText == pAmigos.cards[2].outerText ) {
          
-         pModal.container.innerHTML = `${pModal.guillermo}`;
+         pAmigos.container.innerHTML = `${pAmigos.guillermo}`;
 
       }  else {
 
-         pModal.container.innerHTML = `${pModal.rooth}`;
+         pAmigos.container.innerHTML = `${pAmigos.rooth}`;
 
       }
 
@@ -129,13 +129,13 @@ let mModal = {
 
    cerrarModal: () => {
 
-      pModal.box.style.display = "none";
-      pModal.btnMenu.style.zIndex = "900";
-      pModal.body.style.overflow = "initial";
-      pModal.openAllModal = false;
+      pAmigos.box.style.display = "none";
+      pAmigos.btnMenu.style.zIndex = "900";
+      pAmigos.body.style.overflow = "initial";
+      pAmigos.openAllModal = false;
 
    }
 
 }
 
-mModal.start();
+mAmigos.start();

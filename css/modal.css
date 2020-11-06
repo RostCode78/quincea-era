@@ -394,3 +394,75 @@
 .text-friend ul li a:active {
     box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
 }
+
+
+/*====================================
+=              GALERIA               =
+====================================*/
+
+.modal-fotos {
+    cursor: pointer;
+}
+
+.img-galeria1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-galeria2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-galeria3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-galeria4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-galeria5 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-galeria6 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-galeria7 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galeria/7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

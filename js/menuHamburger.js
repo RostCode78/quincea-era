@@ -71,12 +71,12 @@ let mmH = {
 
          }
 
-         if ( pModal.openAllModal ) {
+         if ( pAmigos.openAllModal ) {
 
-            pModal.box.style.display = "none";
-            pModal.btnMenu.style.zIndex = "900";
-            pModal.body.style.overflow = "initial";
-            pModal.openAllModal = false;
+            pAmigos.box.style.display = "none";
+            pAmigos.btnMenu.style.zIndex = "900";
+            pAmigos.body.style.overflow = "initial";
+            pAmigos.openAllModal = false;
 
          }
 
