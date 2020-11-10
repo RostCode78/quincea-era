@@ -380,85 +380,9 @@ header {
     width: 450px;
     height: 5px;
     position: absolute;
-    top: 170px;
+    top: 150px;
     left: 10px;
     background-color: #303030;
-}
-
-.counter-time-box {
-    width: 300px;
-    height: 100px;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-time {
-    width: 25%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-time h3 {
-    font-size: 2em;
-    color: #303030;
-    font-family: 'Poiret One', cursive;
-}
-
-.card-time p {
-    font-size: 1em;
-    color: #f7f7f7;
-    font-family: 'Poiret One', cursive;
-}
-
-.wc-container-date {
-    width: 45%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-}
-
-.cd-card {
-    width: 350px;
-    height: 100px;
-    position: relative;
-    margin-bottom: -200px;
-    margin-right: -150px;
-    border-top: 3px solid #303030;
-    border-bottom: 3px solid #303030;
-}
-
-.cd-card h3 {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    color: #303030;
-    font-family: 'Oleo Script', cursive;
-}
-
-.cd-card p {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #303030;
-    font-family: 'Oleo Script', cursive;
 }
 
 
@@ -976,7 +900,7 @@ header {
 
 
 /*====================================
-=               ETC                  =
+=              DATOS                 =
 ====================================*/
 
 #datos {
@@ -991,7 +915,7 @@ header {
 .datos-container {
     width: 90%;
     height: 80%;
-    background-color: #d6a7a7;
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(211.19px, auto);
@@ -1007,7 +931,7 @@ header {
 .salon-img {
     width: 100%;
     height: 100%;
-    transition: .3s;
+    transition: .3s ease-in;
     background-image: url(../img/datos/salon.jpg);
     background-size: cover;
     position: absolute;
@@ -1015,13 +939,13 @@ header {
 }
 
 .dato1:hover .salon-img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .salon-box {
     width: 100%;
     height: 100%;
-    background-color: #f9f5f452;
+    background-color: #f9f5f48a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1055,15 +979,17 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: #f9f5f452;
+    background-color: #f9f5f48a;
     border: 3px solid #f9f5f414;
     box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: .3s ease-in-out;
 }
 
 .salon-box a:hover {
     box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
-    text-decoration: underline;
 }
 
 .salon-box a:active {
@@ -1073,23 +999,172 @@ header {
 .dato2 {
     grid-column: 3/5;
     grid-row: 1/2;
-    background-color: #4d8ded;
     position: relative;
     overflow: hidden;
+}
+
+.fecha-box {
+    width: 100%;
+    height: 100%;
+    background-color: #F2C2DC;
+    display: flex;
+    flex-direction: column;
+}
+
+.fecha-top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 37.5px;
+}
+
+.fecha-top h3 {
+    font-size: 3em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.fecha-top p {
+    font-size: 2em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.fecha-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 37.5px;
+}
+
+.fecha-bottom h3 {
+    font-size: 3em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.fecha-bottom p {
+    font-size: 2em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.fecha-bottom p>span {
+    font-weight: 400;
 }
 
 .dato3 {
     grid-column: 3/4;
     grid-row: 2/4;
-    background-color: #4ded90;
+    background-color: #D9BFD7;
     position: relative;
     overflow: hidden;
+}
+
+.regalo-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.regalo-imagen {
+    width: 170px;
+    height: 130px;
+    background-image: url(../img/datos/gift.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.regalo-box p {
+    font-size: 1.5em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.regalo-box a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #D9BFD7;
+    border: 3px solid #D9BFD7;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    font-size: 1.2em;
+    transition: .3s ease-in;
+}
+
+.regalo-box a:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.regalo-box a:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
 }
 
 .dato4 {
     grid-column: 4/5;
     grid-row: 2/4;
-    background-color: #eda04d;
+    background-color: #A7E4F2;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.etiqueta-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.etiqueta-imagen {
+    width: 170px;
+    height: 130px;
+    background-image: url(../img/datos/traje.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.etiqueta-box h2 {
+    font-size: 1.5em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.etiqueta-box p {
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
