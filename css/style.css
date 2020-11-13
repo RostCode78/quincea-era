@@ -644,6 +644,7 @@ header {
 
 .btn-next {
     right: 725px!important;
+    left: 100px!important;
 }
 
 .btn-prev:hover {
