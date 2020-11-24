@@ -205,8 +205,12 @@
         width: 90%;
     }
     .ct-card p {
-        font-size: 4em;
-        line-height: 70px;
+        font-size: 3em;
+        line-height: 43px;
+    }
+    .line {
+        top: 245px;
+        width: 200px;
     }
     .sm-box-right h2 {
         font-size: 3em;
@@ -347,6 +351,24 @@
 }
 
 @media (max-width: 480px) {
+    #inicio {
+        height: 705px;
+    }
+    #sobre-mi {
+        height: 800px;
+    }
+    #amigos {
+        height: 1000px;
+    }
+    #galeria {
+        height: 900px;
+    }
+    #datos {
+        height: 1100px;
+    }
+    #contacto {
+        height: 900px;
+    }
     .menu-lateral {
         width: 100%;
     }
@@ -355,6 +377,7 @@
     }
     .line {
         width: 285px;
+        top: 230px;
     }
     .sm-box-left {
         display: none;
@@ -411,13 +434,14 @@
         align-items: flex-start;
     }
     .ct-card {
-        margin-top: 0px;
+        margin-top: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .line {
-        top: 260px;
+        top: 250px;
+        width: 200px;
     }
     .sm-box-right h2 {
         width: 100%;
